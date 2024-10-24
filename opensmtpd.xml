@@ -99,8 +99,7 @@
 		grouping='require_all'
 		restart_on='refresh'
 		type='path'>
-		<service_fmri
-			value='file://localhost/opt/local/etc/smtpd/smtpd.conf' />
+		<service_fmri value='file://localhost/opt/local/etc/smtpd/smtpd.conf' />
 	</dependency>
 
 	<!--
@@ -127,8 +126,7 @@
 		name='opensmtpd_multi-user'
 		grouping='optional_all'
 		restart_on='none'>
-			<service_fmri
-				value='svc:/milestone/multi-user' />
+		<service_fmri value='svc:/milestone/multi-user' />
 	</dependent>
 
 	<exec_method
@@ -161,8 +159,7 @@
 		<propval name='policy' type='astring' value='use_global' />
 		<propval name='apply_to' type='astring' value='' />
 		<propval name='exceptions' type='astring' value='' />
-		<propval name='value_authorization' type='astring'
-			value='solaris.smf.value.firewall.config' />
+		<propval name='value_authorization' type='astring' value='solaris.smf.value.firewall.config' />
 	</property_group>
 
 	<stability value='Unstable' />
